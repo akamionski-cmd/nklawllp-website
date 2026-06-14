@@ -40,7 +40,7 @@ body{font-family:var(--san);color:var(--tx);background:var(--wh);overflow-x:hidd
 .pb-sub{font-size:16px;font-weight:300;color:rgba(255,255,255,.5);max-width:560px;line-height:1.8}
 
 /* MAP SECTION */
-.map-section{background:var(--nv2);padding:0 0 72px}
+.map-section{background:var(--nv2);padding:0 0 40px}
 .map-wrap{position:relative;max-width:1400px;margin:0 auto;padding:0 52px}
 
 /* MAP LEGEND */
@@ -123,14 +123,53 @@ footer{background:var(--nv2);border-top:3px solid var(--or)}
 .ftdc{font-size:10.5px;color:rgba(255,255,255,.18);text-align:right;line-height:1.5}
 
 @media(max-width:1060px){
-  .snav{padding:0 24px}.pbanner{padding:110px 24px 52px}
-  .map-wrap,.map-legend-in{padding:0 24px}
-  .map-legend{padding:20px 24px}
-  .offices-section{padding:60px 24px}.offices-grid{grid-template-columns:1fr 1fr}
-  .adm-section{padding:56px 24px}.ftbase{padding:18px 24px}
+  .snav{padding:0 24px}
+  .pbanner{padding:110px 24px 52px}
+  .map-wrap{padding:0 16px}
+  .map-legend{padding:16px 20px}
+  .map-legend-in{padding:0;gap:16px;flex-direction:column;align-items:flex-start}
+  .leg-item{gap:10px}
+  .leg-note{margin-left:0;font-size:10px}
+  .leg-divider{width:100%;height:1px;margin:4px 0}
+  .map-svg-wrap svg{width:100%;height:auto}
+  .offices-section{padding:48px 20px}
+  .offices-grid{grid-template-columns:1fr 1fr}
+  .adm-section{padding:48px 20px}
+  .adm-grid{gap:6px}
+  .adm-tag{font-size:10px;padding:7px 12px}
+  .ftbase{padding:18px 24px}
 }
 @media(max-width:640px){
-  .nlinks{display:none}.offices-grid{grid-template-columns:1fr}
+  .nlinks{display:none}
+  .offices-grid{grid-template-columns:1fr}
+  .map-legend-in{gap:12px}
+  .leg-title{font-size:11px}
+  .leg-sub{font-size:10px}
+  .pbanner-in{padding:0}
+  .map-section{padding:0 0 40px}
+}
+
+/* Additional mobile fixes */
+@media(max-width:768px){
+  .snav{padding:0 16px}
+  .hbody{padding:40px 20px 32px}
+  .hlogo img{height:70px}
+  .hh1{font-size:clamp(28px,8vw,48px)}
+  .hsub{font-size:14px}
+  .hstats{flex-direction:column}
+  .hst{border-right:none;border-bottom:1px solid rgba(255,255,255,.08);padding:16px 20px}
+  .sec{padding:56px 20px}
+  .si{padding:0}
+  .pbanner{padding:100px 20px 48px}
+  .pbanner-in{grid-template-columns:1fr !important;gap:28px}
+}
+@media(max-width:480px){
+  .hlogo img{height:56px}
+  .bor,.bgl,.bwh,.bgo{padding:12px 24px;font-size:9.5px}
+  .atty-grid{grid-template-columns:repeat(2,1fr) !important}
+  .ftg{grid-template-columns:1fr !important;padding:32px 20px 20px}
+  .ftbase{padding:14px 20px;flex-direction:column}
+  .ftdc{text-align:left}
 }
 </style>
 </head>
@@ -147,6 +186,7 @@ footer{background:var(--nv2);border-top:3px solid var(--or)}
     <li><a href="professionals.html">Professionals</a></li>
     <li><a href="careers.html">Careers</a></li>
     
+    <li><a href="partners.html">Partners</a></li>
     <li><a href="contact.html" class="ncta">Contact</a></li>
   </ul>
 </nav>
@@ -326,13 +366,17 @@ footer{background:var(--nv2);border-top:3px solid var(--or)}
     <circle cx="731.6" cy="238.9" r="6" fill="#4DB8FF" opacity="0.85"/>
     <circle cx="731.6" cy="238.9" r="3" fill="white" opacity="0.6"/>
   </g>
-  <g class="pin-adm" data-place="Florida" data-attys="Hoff (Federal — Middle District)" style="cursor:pointer">
+  <g class="pin-adm" data-place="Florida" data-attys="Ben-Ezra (Florida state bar); Hoff (M. District of Tennessee, federal)" style="cursor:pointer">
     <circle cx="663.3" cy="474.0" r="6" fill="#4DB8FF" opacity="0.85"/>
     <circle cx="663.3" cy="474.0" r="3" fill="white" opacity="0.6"/>
   </g>
   <g class="pin-adm" data-place="Arkansas" data-attys="Kamionski, Nathan — Eastern District of Arkansas" style="cursor:pointer">
     <circle cx="499.0" cy="328.5" r="6" fill="#4DB8FF" opacity="0.85"/>
     <circle cx="499.0" cy="328.5" r="3" fill="white" opacity="0.6"/>
+  </g>
+  <g class="pin-adm" data-place="Tennessee" data-attys="Hoff — Middle District of Tennessee (federal)" style="cursor:pointer">
+    <circle cx="584.4" cy="311.9" r="6" fill="#4DB8FF" opacity="0.85"/>
+    <circle cx="584.4" cy="311.9" r="3" fill="white" opacity="0.6"/>
   </g>
   <rect x="28" y="448" width="128" height="98" rx="3" fill="#18303f" stroke="#0D2233" stroke-width="0.7"/>
   <text x="92" y="505" text-anchor="middle" fill="rgba(255,255,255,.3)" font-size="11" font-family="Inter,sans-serif">Alaska</text>
@@ -423,6 +467,7 @@ footer{background:var(--nv2);border-top:3px solid var(--or)}
       <span class="adm-tag">Wisconsin</span>
       <span class="adm-tag">Indiana</span>
       <span class="adm-tag">New Mexico</span>
+      <span class="adm-tag">Florida</span>
       <span class="adm-tag">Washington, D.C.</span>
       <span class="adm-tag">N. District of Illinois</span>
       <span class="adm-tag">S. District of Illinois</span>

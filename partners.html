@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Careers — Nathan & Kamionski LLP</title>
+<title>Partner Services — Nathan & Kamionski LLP</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@ html{scroll-behavior:smooth}
 body{font-family:var(--san);color:var(--tx);background:var(--wh);overflow-x:hidden;line-height:1.65}
 
 /* NAV */
-.snav{position:fixed;top:0;left:0;right:0;z-index:500;height:78px;background:var(--wh);border-bottom:1px solid var(--rl);display:flex;align-items:center;justify-content:space-between;padding:0 52px;min-width:0}
+.snav{position:fixed;top:0;left:0;right:0;z-index:500;height:78px;background:var(--wh);border-bottom:1px solid var(--rl);display:flex;align-items:center;justify-content:space-between;padding:0 52px}
 .nlogo{display:flex;align-items:center;text-decoration:none}
 .nlinks{display:flex;align-items:center;gap:4px;list-style:none}
 .nlinks a{font-size:10.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--tm);text-decoration:none;padding:7px 11px;transition:color .18s}
@@ -30,88 +30,75 @@ body{font-family:var(--san);color:var(--tx);background:var(--wh);overflow-x:hidd
 .ncta:hover{background:var(--or2)!important}
 
 /* HERO */
-.hero{padding:148px 52px 88px;background:var(--nv2);border-bottom:3px solid var(--or);position:relative;overflow:hidden}
+.hero{padding:148px 52px 96px;background:var(--nv2);border-bottom:3px solid var(--or);position:relative;overflow:hidden}
 .hero-dot{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(rgba(255,255,255,.025) 1px,transparent 1px);background-size:40px 40px}
-.hero-in{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr;max-width:720px;position:relative;z-index:1}
+.hero-in{max-width:1200px;margin:0 auto;position:relative;z-index:1}
 .ey{font-size:10px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--or);margin-bottom:14px}
-.hero-h{font-family:var(--ser);font-size:clamp(38px,5vw,68px);font-weight:300;line-height:1.08;color:var(--wh);margin-bottom:22px}
+.hero-h{font-family:var(--ser);font-size:clamp(38px,5vw,66px);font-weight:300;line-height:1.08;color:var(--wh);margin-bottom:22px}
 .hero-h em{font-style:italic;color:rgba(255,255,255,.45)}
-.hero-sub{font-size:17px;font-weight:300;color:rgba(255,255,255,.5);line-height:1.85;margin-bottom:36px;max-width:480px}
+.hero-sub{font-size:17px;font-weight:300;color:rgba(255,255,255,.5);line-height:1.85;max-width:680px;margin-bottom:40px}
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap}
 .btn-or{display:inline-block;background:var(--or);color:var(--wh);padding:14px 34px;font-size:10.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;transition:background .18s}
 .btn-or:hover{background:var(--or2)}
 .btn-gl{display:inline-block;border:1px solid rgba(255,255,255,.28);color:rgba(255,255,255,.75);padding:13px 32px;font-size:10.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;transition:border-color .18s,color .18s}
 .btn-gl:hover{border-color:rgba(255,255,255,.65);color:var(--wh)}
-.btn-nv{display:inline-block;background:var(--nv);color:var(--wh);padding:14px 34px;font-size:10.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;transition:background .18s;border:1px solid rgba(255,255,255,.1)}
+.btn-nv{display:inline-block;background:var(--nv);color:var(--wh);padding:14px 34px;font-size:10.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(255,255,255,.15);transition:background .18s}
 .btn-nv:hover{background:#254D62}
-
-/* HERO STATS */
-.hero-stats{display:flex;flex-direction:column;gap:1px}
-.hstat{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);padding:22px 28px;display:flex;align-items:center;gap:18px}
-.hstat-n{font-family:var(--ser);font-size:42px;font-weight:300;color:var(--or);line-height:1;flex-shrink:0}
-.hstat-l{font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.45);line-height:1.6}
+.btn-wh{display:inline-block;background:var(--wh);color:var(--nv);padding:14px 34px;font-size:10.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;transition:background .18s}
+.btn-wh:hover{background:var(--cr)}
 
 /* SECTIONS */
 .sec{padding:88px 52px}.si{max-width:1200px;margin:0 auto}
 .sh{font-family:var(--ser);font-size:clamp(30px,4vw,48px);font-weight:400;line-height:1.1;color:var(--nv);margin-bottom:18px}
 .sh.wh{color:var(--wh)}
 .hr{width:44px;height:2px;background:var(--or);margin:0 0 28px}
+.lead{font-size:17px;font-weight:400;color:var(--tx);line-height:1.85;max-width:780px;margin-bottom:20px}
+.body-p{font-size:15.5px;color:var(--tm);line-height:1.85;max-width:780px;margin-bottom:18px}
 
-/* WHY JOIN */
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rl);margin-top:48px}
-.why-card{background:var(--wh);padding:40px 32px}
-.why-num{font-family:var(--ser);font-size:48px;font-weight:300;color:var(--rl);line-height:1;margin-bottom:16px}
-.why-title{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--nv);margin-bottom:10px}
-.why-body{font-size:14.5px;color:var(--tm);line-height:1.78}
+/* INTRO TWO-COL */
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;margin-top:52px}
+.intro-left p{font-size:15.5px;color:var(--tm);line-height:1.85;margin-bottom:16px}
+.intro-right{background:var(--nv2);padding:40px 36px;border-top:3px solid var(--or)}
+.intro-right-label{font-size:9px;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:20px}
+.intro-right-list{list-style:none;display:flex;flex-direction:column;gap:14px}
+.intro-right-list li{font-size:14px;color:rgba(255,255,255,.7);padding-left:18px;position:relative;line-height:1.6}
+.intro-right-list li::before{content:'→';position:absolute;left:0;color:var(--or);font-weight:700}
 
-/* POSITIONS */
-.positions{margin-top:48px;display:flex;flex-direction:column;gap:1px;background:var(--rl)}
-.pos{background:var(--wh);padding:32px 36px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:24px;transition:background .18s;cursor:pointer;text-decoration:none}
-.pos:hover{background:var(--cr)}
-.pos-left{}
-.pos-tag{font-size:9.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--or);margin-bottom:6px}
-.pos-title{font-family:var(--ser);font-size:24px;font-weight:400;color:var(--nv);margin-bottom:6px}
-.pos-meta{font-size:12.5px;color:var(--tl)}
-.pos-arr{font-size:18px;color:var(--or);flex-shrink:0;transition:transform .18s}
-.pos:hover .pos-arr{transform:translateX(4px)}
+/* PARTNER CARDS */
+.partner-cards{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rl);margin-top:52px}
+.pcard{background:var(--wh);padding:52px 44px;position:relative;overflow:hidden}
+.pcard::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--or)}
+.pcard-tag{font-size:9px;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:var(--or);margin-bottom:16px}
+.pcard-name{font-family:var(--ser);font-size:32px;font-weight:400;color:var(--nv);margin-bottom:6px;line-height:1.1}
+.pcard-url{font-size:12px;color:var(--tl);margin-bottom:22px;letter-spacing:.04em}
+.pcard-rule{width:36px;height:2px;background:var(--or);margin:0 0 22px}
+.pcard-desc{font-size:15px;color:var(--tm);line-height:1.8;margin-bottom:28px}
+.pcard-features{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+.pcard-features li{font-size:13px;color:var(--tm);padding-left:16px;position:relative;line-height:1.6}
+.pcard-features li::before{content:'·';position:absolute;left:0;color:var(--or);font-weight:700;font-size:16px;line-height:1.4}
+.pcard-link{display:inline-flex;align-items:center;gap:8px;font-size:10.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--or);text-decoration:none;transition:gap .18s}
+.pcard-link:hover{gap:14px}
+.pcard-link::after{content:'→'}
 
-/* CULTURE */
-.culture-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;margin-top:48px}
-.culture-img{background:var(--nv2);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.culture-img img{width:100%;height:100%;object-fit:cover;filter:brightness(.7) saturate(.85)}
-.culture-points{display:flex;flex-direction:column;gap:26px}
-.cp{display:flex;gap:18px}
-.cp-bar{width:2px;flex-shrink:0;background:var(--or);margin-top:4px}
-.cp-title{font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--nv);margin-bottom:6px}
-.cp-body{font-size:14.5px;color:var(--tm);line-height:1.75}
-
-/* APPLICATION FORM */
-.form-wrap{max-width:720px}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 28px;margin-top:40px}
-.form-grid.full{grid-template-columns:1fr}
-.fg{display:flex;flex-direction:column;gap:7px}
-.fg.span2{grid-column:1/-1}
-label{font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--nv)}
-label span{color:var(--or)}
-input,select,textarea{font-family:var(--san);font-size:14px;color:var(--tx);background:var(--wh);border:1px solid var(--rl);padding:11px 14px;outline:none;transition:border-color .18s;width:100%}
-input:focus,select:focus,textarea:focus{border-color:var(--or)}
-select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%231B3848' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
-textarea{resize:vertical;min-height:130px}
-.upload-area{border:1px dashed var(--rl);padding:28px 20px;text-align:center;cursor:pointer;transition:border-color .18s;background:var(--cr)}
-.upload-area:hover{border-color:var(--or)}
-.upload-icon{font-size:28px;margin-bottom:8px;color:var(--tl)}
-.upload-label{font-size:13px;color:var(--tm)}.upload-label strong{color:var(--or)}
-.upload-hint{font-size:11px;color:var(--tl);margin-top:4px}
-.submit-row{grid-column:1/-1;display:flex;align-items:center;gap:24px;margin-top:8px;flex-wrap:wrap}
-.form-note{font-size:12px;color:var(--tl);line-height:1.6;max-width:380px}
-.success-msg{display:none;padding:18px 24px;background:#e8f5e9;border-left:4px solid #4caf50;color:#2e7d32;font-size:14px;margin-top:20px;grid-column:1/-1}
+/* WAYS TO WORK */
+.ways-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rl);margin-top:52px}
+.way{background:var(--cr);padding:40px 32px}
+.way-num{font-family:var(--ser);font-size:52px;font-weight:300;color:var(--rl);line-height:1;margin-bottom:16px}
+.way-title{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--nv);margin-bottom:12px}
+.way-body{font-size:14.5px;color:var(--tm);line-height:1.78}
 
 /* QUOTE */
-.quote-band{background:var(--nv);padding:64px 52px;border-top:3px solid var(--or)}
-.quote-in{max-width:760px;margin:0 auto;text-align:center}
+.quote-band{background:var(--nv);padding:72px 52px;border-top:3px solid var(--or)}
+.quote-in{max-width:800px;margin:0 auto;text-align:center}
 .qmark{font-family:var(--ser);font-size:80px;color:var(--or);line-height:.8;margin-bottom:8px}
-.qtext{font-family:var(--ser);font-size:clamp(20px,2.8vw,32px);font-weight:300;font-style:italic;color:var(--wh);line-height:1.55;margin-bottom:20px}
-.qattr{font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.qtext{font-family:var(--ser);font-size:clamp(19px,2.6vw,30px);font-weight:300;font-style:italic;color:var(--wh);line-height:1.6;margin-bottom:20px}
+.qattr{font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.38)}
+
+/* CTA */
+.cta-band{background:var(--nv2);padding:72px 52px}
+.cta-in{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:48px;flex-wrap:wrap}
+.cta-h{font-family:var(--ser);font-size:clamp(26px,3.5vw,44px);font-weight:300;color:var(--wh);margin-bottom:10px}
+.cta-sub{font-size:15px;font-weight:300;color:rgba(255,255,255,.45);line-height:1.75;max-width:440px}
 
 /* FOOTER */
 footer{background:var(--nv2);border-top:3px solid var(--or)}
@@ -120,41 +107,16 @@ footer{background:var(--nv2);border-top:3px solid var(--or)}
 .ftdc{font-size:10.5px;color:rgba(255,255,255,.18);text-align:right;line-height:1.5}
 
 @media(max-width:1060px){
-  .snav{padding:0 24px}.hero{padding:120px 24px 72px}.hero-in{grid-template-columns:1fr;gap:48px}
-  .hero-stats{flex-direction:row;flex-wrap:wrap;gap:1px}
-  .hstat{flex:1;min-width:140px}
-  .sec{padding:68px 24px}.why-grid{grid-template-columns:1fr 1fr}
-  .culture-grid{grid-template-columns:1fr;gap:40px}.culture-img{display:none}
-  .form-grid{grid-template-columns:1fr}.fg.span2{grid-column:1}
-  .submit-row{flex-direction:column;align-items:flex-start}
-  .ftbase{padding:18px 24px}.quote-band{padding:52px 24px}
+  .snav{padding:0 24px}.hero{padding:120px 24px 72px}
+  .sec{padding:68px 24px}.intro-grid{grid-template-columns:1fr;gap:40px}
+  .partner-cards{grid-template-columns:1fr}.ways-grid{grid-template-columns:1fr 1fr}
+  .cta-band{padding:56px 24px}.cta-in{flex-direction:column;align-items:flex-start}
+  .quote-band{padding:56px 24px}.ftbase{padding:18px 24px}
 }
 @media(max-width:640px){
-  .nlinks{display:none}.why-grid{grid-template-columns:1fr}
-  .form-grid{grid-template-columns:1fr}
-}
-
-/* Additional mobile fixes */
-@media(max-width:768px){
-  .snav{padding:0 16px}
-  .hbody{padding:40px 20px 32px}
-  .hlogo img{height:70px}
-  .hh1{font-size:clamp(28px,8vw,48px)}
-  .hsub{font-size:14px}
-  .hstats{flex-direction:column}
-  .hst{border-right:none;border-bottom:1px solid rgba(255,255,255,.08);padding:16px 20px}
-  .sec{padding:56px 20px}
-  .si{padding:0}
-  .pbanner{padding:100px 20px 48px}
-  .pbanner-in{grid-template-columns:1fr !important;gap:28px}
-}
-@media(max-width:480px){
-  .hlogo img{height:56px}
-  .bor,.bgl,.bwh,.bgo{padding:12px 24px;font-size:9.5px}
-  .atty-grid{grid-template-columns:repeat(2,1fr) !important}
-  .ftg{grid-template-columns:1fr !important;padding:32px 20px 20px}
-  .ftbase{padding:14px 20px;flex-direction:column}
-  .ftdc{text-align:left}
+  .nlinks{display:none}.ways-grid{grid-template-columns:1fr}
+  .hero-btns{flex-direction:column;align-items:flex-start}
+  .ftbase{flex-direction:column}.ftdc{text-align:left}
 }
 </style>
 </head>
@@ -169,8 +131,8 @@ footer{background:var(--nv2);border-top:3px solid var(--or)}
     <li><a href="practice.html">Practice Areas</a></li>
     <li><a href="offices.html">Offices</a></li>
     <li><a href="professionals.html">Professionals</a></li>
-    <li><a href="careers.html" class="act">Careers</a></li>
-    <li><a href="partners.html">Partners</a></li>
+    <li><a href="careers.html">Careers</a></li>
+    <li><a href="partners.html" class="act">Partners</a></li>
     <li><a href="contact.html" class="ncta">Contact</a></li>
   </ul>
 </nav>
@@ -179,99 +141,115 @@ footer{background:var(--nv2);border-top:3px solid var(--or)}
 <section class="hero">
   <div class="hero-dot" aria-hidden="true"></div>
   <div class="hero-in">
-    <div>
-      <p class="ey">Join Our Team</p>
-      <h1 class="hero-h">High-stakes work.<br>Exceptional <em>people.</em></h1>
-      <p class="hero-sub">Nathan &amp; Kamionski LLP is always looking for talented attorneys and law students who want to do serious work on complex, high-profile litigation. Seven offices. One team. Real cases from day one.</p>
-      <div class="hero-btns">
-        <a href="#apply" class="btn-or">Apply Now</a>
-        <a href="#positions" class="btn-gl">Open Positions</a>
-      </div>
+    <p class="ey">Beyond Representation</p>
+    <h1 class="hero-h">Litigation support<br>built for the <em>hardest cases.</em></h1>
+    <p class="hero-sub">Nathan &amp; Kamionski LLP doesn't just litigate — we build. Through our partners at Pointed Discovery LLC and JuryPulse, we offer co-counsel, back-office litigation support, and cutting-edge jury intelligence to attorneys and firms nationwide who demand more from their litigation infrastructure.</p>
+    <div class="hero-btns">
+      <a href="#partner-services" class="btn-or">Our Partner Services</a>
+      <a href="contact.html" class="btn-gl">Start a Conversation</a>
     </div>
-    </div>
+  </div>
 </section>
 
-<!-- WHY NK -->
-<section class="sec" style="background:var(--wh)">
+<!-- INTRO -->
+<section class="sec" style="background:var(--wh)" id="partner-services">
   <div class="si">
-    <p class="ey">Why Nathan &amp; Kamionski</p>
-    <h2 class="sh">A place to do your best work.</h2>
+    <p class="ey">Our Philosophy</p>
+    <h2 class="sh">Constantly evaluating what high-stakes litigation demands.</h2>
     <div class="hr"></div>
-    <div class="why-grid">
-      <div class="why-card">
-        <div class="why-num">01</div>
-        <div class="why-title">Real Cases from Day One</div>
-        <div class="why-body">Our attorneys try cases. Junior associates aren't stuck in document review for years — you will draft motions, take depositions, and appear in court early in your career.</div>
+    <div class="intro-grid">
+      <div class="intro-left">
+        <p>The demands of complex civil litigation evolve constantly. What worked five years ago isn't enough today — clients expect faster assessments, sharper jury intelligence, deeper document analysis, and co-counsel who can hit the ground running in any jurisdiction.</p>
+        <p>We built our practice around that reality. Nathan &amp; Kamionski LLP maintains active partnerships with Pointed Discovery LLC and JuryPulse to give our clients — and the co-counsel and firms we work alongside — access to capabilities that most litigation shops simply don't have.</p>
+        <p>We welcome the opportunity to serve as co-counsel in any jurisdiction, to provide back-office litigation support to other firms, and to partner with attorneys who share our commitment to doing the work right. If you're handling high-stakes litigation and need a partner — in the courtroom or behind the scenes — we want to hear from you.</p>
+        <a href="contact.html" class="btn-or" style="margin-top:12px;display:inline-block">Get In Touch</a>
       </div>
-      <div class="why-card">
-        <div class="why-num">02</div>
-        <div class="why-title">High-Stakes, Complex Work</div>
-        <div class="why-body">We handle civil rights defense, reversed conviction cases, police-involved incidents, and multi-party commercial disputes. The work is substantive, high-profile, and intellectually demanding.</div>
-      </div>
-      <div class="why-card">
-        <div class="why-num">03</div>
-        <div class="why-title">Mentorship That Actually Works</div>
-        <div class="why-body">Our partners and senior associates are hands-on mentors. You will work directly alongside attorneys with deep trial experience — not just read their footnotes.</div>
-      </div>
-      <div class="why-card">
-        <div class="why-num">04</div>
-        <div class="why-title">Seven Offices, One Culture</div>
-        <div class="why-body">From Chicago to Baltimore to Los Angeles — all seven offices operate as one firm. You're part of a national practice with colleagues across the country and access to work across all offices.</div>
-      </div>
-      <div class="why-card">
-        <div class="why-num">05</div>
-        <div class="why-title">Specialized Expertise</div>
-        <div class="why-body">Municipal defense, police liability, nursing home litigation, and civil rights law are specialized fields that most litigators never master. At N&amp;K, you will build genuine expertise that sets you apart.</div>
-      </div>
-      <div class="why-card">
-        <div class="why-num">06</div>
-        <div class="why-title">Growth &amp; Advancement</div>
-        <div class="why-body">We promote from within. Several of our partners started as associates. If you do great work, your trajectory here is real — not theoretical.</div>
+      <div class="intro-right">
+        <div class="intro-right-label">What We Offer Partner Firms</div>
+        <ul class="intro-right-list">
+          <li>Co-counsel in any federal or state jurisdiction</li>
+          <li>Pre-litigation investigation and case theory development</li>
+          <li>Audio/video review and large-scale document analysis via Pointed Discovery</li>
+          <li>AI-powered jury research and strike recommendations via JuryPulse</li>
+          <li>Back-office litigation support for solo practitioners and boutique firms</li>
+          <li>Expert consultation on § 1983, police liability, and municipal defense</li>
+          <li>Trial preparation and mock cross-examination support</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- OPEN POSITIONS -->
-<section class="sec" style="background:var(--wh)" id="positions">
+<!-- PARTNER CARDS -->
+<section class="sec" style="background:var(--cr)">
   <div class="si">
-    <p class="ey">Open Positions</p>
-    <h2 class="sh">We're hiring in all offices.</h2>
+    <p class="ey">Our Partners</p>
+    <h2 class="sh">Two platforms. Built for litigation.</h2>
     <div class="hr"></div>
-    <p style="font-size:15.5px;color:var(--tm);line-height:1.8;max-width:580px">We are actively recruiting experienced attorneys and law students across all seven offices. If you are talented, driven, and want to do serious litigation work — we want to hear from you.</p>
-    <div class="positions">
-      <a href="#apply" class="pos">
-        <div class="pos-left">
-          <div class="pos-tag">Experienced Attorney</div>
-          <div class="pos-title">Associate / Senior Associate — All Offices</div>
-          <div class="pos-meta">Chicago &nbsp;·&nbsp; Detroit &nbsp;·&nbsp; Baltimore &nbsp;·&nbsp; Philadelphia &nbsp;·&nbsp; Los Angeles &nbsp;·&nbsp; St. Louis &nbsp;·&nbsp; Long Island</div>
-        </div>
-        <div class="pos-arr">→</div>
-      </a>
-      <a href="#apply" class="pos">
-        <div class="pos-left">
-          <div class="pos-tag">Experienced Attorney</div>
-          <div class="pos-title">Partner-Level Lateral — Select Offices</div>
-          <div class="pos-meta">Civil rights defense, municipal litigation, or employment litigation background preferred</div>
-        </div>
-        <div class="pos-arr">→</div>
-      </a>
-      <a href="#apply" class="pos">
-        <div class="pos-left">
-          <div class="pos-tag">Law Student</div>
-          <div class="pos-title">Summer Law Clerk — All Offices</div>
-          <div class="pos-meta">1Ls and 2Ls welcome · Paid clerkship · Substantive litigation experience</div>
-        </div>
-        <div class="pos-arr">→</div>
-      </a>
-      <a href="#apply" class="pos">
-        <div class="pos-left">
-          <div class="pos-tag">Law Student</div>
-          <div class="pos-title">Part-Time Law Clerk (Academic Year) — All Offices</div>
-          <div class="pos-meta">Work on real cases while in school · Flexible scheduling around class commitments</div>
-        </div>
-        <div class="pos-arr">→</div>
-      </a>
+    <div class="partner-cards">
+
+      <!-- Pointed Discovery -->
+      <div class="pcard">
+        <div class="pcard-tag">Litigation Support</div>
+        <div class="pcard-name">Pointed Discovery LLC</div>
+        <div class="pcard-url">pointeddiscovery.com</div>
+        <div class="pcard-rule"></div>
+        <p class="pcard-desc">Pointed Discovery is a specialized litigation support company focused on the evidence that matters most in high-stakes cases — audio, video, and large-scale document analysis. Founded by attorneys who understand what is relevant and what wins cases, PD gives legal teams the analytical firepower to process complex discovery faster and more accurately than traditional review.</p>
+        <ul class="pcard-features">
+          <li>Body camera and surveillance video review and indexing</li>
+          <li>Jail and prison telephone call transcript analysis</li>
+          <li>Large-scale document review with issue-spotting and chronology building</li>
+          <li>Brady material identification and disclosure analysis</li>
+          <li>Expert memos and deposition preparation support</li>
+          <li>Witness credibility assessment from recorded materials</li>
+        </ul>
+        <a href="https://pointeddiscovery.com" target="_blank" rel="noopener" class="pcard-link">Visit Pointed Discovery</a>
+      </div>
+
+      <!-- JuryPulse -->
+      <div class="pcard">
+        <div class="pcard-tag">Jury Intelligence</div>
+        <div class="pcard-name">JuryPulse</div>
+        <div class="pcard-url">jurypulse.app</div>
+        <div class="pcard-rule"></div>
+        <p class="pcard-desc">JuryPulse is an AI-powered jury intelligence platform purpose-built for civil litigation. Where traditional jury consultants rely on observation and instinct, JuryPulse pulls real public records — campaign finance data, court history, voter registration, and social presence — during voir dire to give trial attorneys fast, data-driven profiles on every prospective juror before a single question is asked.</p>
+        <ul class="pcard-features">
+          <li>Real-time juror research during voir dire</li>
+          <li>AI-generated strike recommendations with plaintiff/defense perspective toggle</li>
+          <li>Ideal juror profile generation based on case theory</li>
+          <li>Batson challenge monitoring and documentation</li>
+          <li>Campaign finance, court history, and voter registration data</li>
+          <li>Supports up to 50 jurors per panel simultaneously</li>
+        </ul>
+        <a href="https://jurypulse.app" target="_blank" rel="noopener" class="pcard-link">Visit JuryPulse</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WAYS TO WORK -->
+<section class="sec" style="background:var(--wh)">
+  <div class="si">
+    <p class="ey">How We Work Together</p>
+    <h2 class="sh">Three ways to partner with N&amp;K.</h2>
+    <div class="hr"></div>
+    <div class="ways-grid">
+      <div class="way">
+        <div class="way-num">01</div>
+        <div class="way-title">Co-Counsel</div>
+        <div class="way-body">We serve as co-counsel to firms litigating cases in jurisdictions where they need local expertise or additional trial capacity. Our attorneys are admitted in more than 20 jurisdictions and regularly appear in federal courts nationwide. Whether you need a second chair for trial or someone to carry the file, we're ready to work alongside you.</div>
+      </div>
+      <div class="way">
+        <div class="way-num">02</div>
+        <div class="way-title">Back-Office Support</div>
+        <div class="way-body">Not every firm has the infrastructure for large, complex cases — and they shouldn't have to. Through our relationship with Pointed Discovery, we provide document analysis, video review, transcript summaries, and other litigation support functions that let your attorneys focus on strategy while we handle the volume work.</div>
+      </div>
+      <div class="way">
+        <div class="way-num">03</div>
+        <div class="way-title">Jury Intelligence</div>
+        <div class="way-body">JuryPulse is available to partner firms and co-counsel as a standalone tool or as part of a broader trial preparation engagement. Our attorneys have used it in active trials — we know how to integrate juror research into voir dire strategy and strike decisions. We're happy to consult on how to deploy it effectively in your case.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -280,101 +258,47 @@ footer{background:var(--nv2);border-top:3px solid var(--or)}
 <div class="quote-band">
   <div class="quote-in">
     <div class="qmark">"</div>
-    <p class="qtext">We built this firm to be the kind of place we would have wanted to work at the start of our own careers — where the work is real, the mentorship is genuine, and the opportunity to grow is unlimited.</p>
-    <p class="qattr">Avi Kamionski &amp; Shneur Nathan &nbsp;·&nbsp; Founding Partners</p>
+    <p class="qtext">The best outcomes in complex litigation don't happen by accident. They happen because someone was thinking about the case harder, earlier, and with better tools than the other side.</p>
+    <p class="qattr">Nathan &amp; Kamionski LLP &nbsp;·&nbsp; Partner Services</p>
   </div>
 </div>
 
-<!-- APPLICATION FORM -->
-<section class="sec" style="background:var(--cr)" id="apply">
+<!-- WHO WE WORK WITH -->
+<section class="sec" style="background:var(--cr)">
   <div class="si">
-    <p class="ey">Apply</p>
-    <h2 class="sh">Start your application.</h2>
+    <p class="ey">Who We Work With</p>
+    <h2 class="sh">We welcome attorneys from across the country.</h2>
     <div class="hr"></div>
-    <p style="font-size:15.5px;color:var(--tm);line-height:1.8;max-width:580px;margin-bottom:8px">Tell us about yourself. We review every application and respond to candidates whose background is a strong fit. We're looking for talent at every level — from law students to experienced lateral partners.</p>
-
-    <div class="form-wrap">
-      <form id="appForm" novalidate>
-        <div class="form-grid">
-          <div class="fg">
-            <label for="fname">First Name <span>*</span></label>
-            <input type="text" id="fname" name="fname" placeholder="Jane" required>
-          </div>
-          <div class="fg">
-            <label for="lname">Last Name <span>*</span></label>
-            <input type="text" id="lname" name="lname" placeholder="Smith" required>
-          </div>
-          <div class="fg">
-            <label for="email">Email Address <span>*</span></label>
-            <input type="email" id="email" name="email" placeholder="jane@example.com" required>
-          </div>
-          <div class="fg">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="(312) 555-0100">
-          </div>
-          <div class="fg">
-            <label for="position">Position of Interest <span>*</span></label>
-            <select id="position" name="position" required>
-              <option value="">Select a position</option>
-              <option>Associate Attorney</option>
-              <option>Senior Associate Attorney</option>
-              <option>Partner-Level Lateral</option>
-              <option>Summer Law Clerk</option>
-              <option>Part-Time Law Clerk (Academic Year)</option>
-            </select>
-          </div>
-          <div class="fg">
-            <label for="office">Preferred Office <span>*</span></label>
-            <select id="office" name="office" required>
-              <option value="">Select an office</option>
-              <option>Chicago, IL</option>
-              <option>Detroit, MI</option>
-              <option>Baltimore, MD</option>
-              <option>Philadelphia, PA</option>
-              <option>Los Angeles, CA</option>
-              <option>St. Louis, MO</option>
-              <option>Long Island, NY</option>
-              <option>Open to Multiple Offices</option>
-            </select>
-          </div>
-          <div class="fg">
-            <label for="school">Law School</label>
-            <input type="text" id="school" name="school" placeholder="University of Chicago Law School">
-          </div>
-          <div class="fg">
-            <label for="gradyear">Graduation Year</label>
-            <input type="text" id="gradyear" name="gradyear" placeholder="2019">
-          </div>
-          <div class="fg span2">
-            <label for="linkedin">LinkedIn Profile URL</label>
-            <input type="url" id="linkedin" name="linkedin" placeholder="https://www.linkedin.com/in/yourname">
-          </div>
-          <div class="fg span2">
-            <label for="message">Cover Letter / Message <span>*</span></label>
-            <textarea id="message" name="message" placeholder="Tell us about your background, why you're interested in Nathan &amp; Kamionski LLP, and what type of work you're most passionate about." required></textarea>
-          </div>
-          <div class="fg span2">
-            <label>Resume / CV <span>*</span></label>
-            <div class="upload-area" id="uploadArea" onclick="document.getElementById('resumeFile').click()">
-              <div class="upload-icon">📄</div>
-              <div class="upload-label"><strong>Click to upload</strong> or drag and drop</div>
-              <div class="upload-hint">PDF, DOC, or DOCX · Max 10MB</div>
-              <div id="fileName" style="font-size:13px;color:var(--or);margin-top:8px;display:none"></div>
-            </div>
-            <input type="file" id="resumeFile" accept=".pdf,.doc,.docx" style="display:none">
-          </div>
-          <div class="success-msg" id="successMsg">
-            ✓ Thank you for your application! We will review your materials and be in touch if your background is a strong fit.
-          </div>
-          <div class="submit-row">
-            <button type="submit" class="btn-or" style="cursor:pointer;border:none;font-family:var(--san)">Submit Application</button>
-            <p class="form-note">Applications are reviewed on a rolling basis. We respond to candidates whose background matches our current needs.</p>
-          </div>
-        </div>
-      </form>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:8px">
+      <div>
+        <p style="font-size:15.5px;color:var(--tm);line-height:1.85;margin-bottom:16px">We regularly partner with solo practitioners, boutique litigation firms, insurance carriers, and public entity counsel who need co-counsel or support on specific cases. We are not referral-fee driven — we partner where we can add genuine value.</p>
+        <p style="font-size:15.5px;color:var(--tm);line-height:1.85">If you're handling a § 1983 civil rights matter, a police liability case, a reversed conviction claim, or any complex civil defense matter — and you need a firm that knows the terrain — we'd like to talk.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;justify-content:center">
+        <div style="border:1px solid var(--rl);background:var(--wh);padding:12px 20px;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--nv);display:flex;align-items:center;gap:8px"><span style="color:var(--or);font-size:16px">·</span>Solo Practitioners</div>
+        <div style="border:1px solid var(--rl);background:var(--wh);padding:12px 20px;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--nv);display:flex;align-items:center;gap:8px"><span style="color:var(--or);font-size:16px">·</span>Boutique Litigation Firms</div>
+        <div style="border:1px solid var(--rl);background:var(--wh);padding:12px 20px;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--nv);display:flex;align-items:center;gap:8px"><span style="color:var(--or);font-size:16px">·</span>Insurance Carriers &amp; Coverage Counsel</div>
+        <div style="border:1px solid var(--rl);background:var(--wh);padding:12px 20px;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--nv);display:flex;align-items:center;gap:8px"><span style="color:var(--or);font-size:16px">·</span>Public Entity &amp; Municipal Counsel</div>
+        <div style="border:1px solid var(--rl);background:var(--wh);padding:12px 20px;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--nv);display:flex;align-items:center;gap:8px"><span style="color:var(--or);font-size:16px">·</span>Law Firms Seeking Referral Partners</div>
+      </div>
     </div>
   </div>
 </section>
+
+<!-- CTA -->
+<div class="cta-band">
+  <div class="cta-in">
+    <div>
+      <h2 class="cta-h">Ready to work together?</h2>
+      <p class="cta-sub">Tell us about your case or your firm's needs. We'll respond quickly and candidly about whether we're the right fit.</p>
+    </div>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a href="contact.html" class="btn-wh">Contact Our Team</a>
+      <a href="https://pointeddiscovery.com" target="_blank" rel="noopener" class="btn-gl" style="border-color:rgba(255,255,255,.3)">Pointed Discovery</a>
+      <a href="https://jurypulse.app" target="_blank" rel="noopener" class="btn-gl" style="border-color:rgba(255,255,255,.3)">JuryPulse</a>
+    </div>
+  </div>
+</div>
 
 <footer>
   <div class="ftbase">
@@ -383,53 +307,5 @@ footer{background:var(--nv2);border-top:3px solid var(--or)}
   </div>
 </footer>
 
-<script>
-// File upload display
-document.getElementById('resumeFile').addEventListener('change', function() {
-  const fn = document.getElementById('fileName');
-  if(this.files.length) {
-    fn.textContent = '✓ ' + this.files[0].name;
-    fn.style.display = 'block';
-    document.getElementById('uploadArea').style.borderColor = 'var(--or)';
-  }
-});
-
-// Drag and drop
-const ua = document.getElementById('uploadArea');
-ua.addEventListener('dragover', e => { e.preventDefault(); ua.style.borderColor='var(--or)'; });
-ua.addEventListener('dragleave', () => { ua.style.borderColor='var(--rl)'; });
-ua.addEventListener('drop', e => {
-  e.preventDefault();
-  const dt = e.dataTransfer;
-  if(dt.files.length) {
-    document.getElementById('resumeFile').files = dt.files;
-    const fn = document.getElementById('fileName');
-    fn.textContent = '✓ ' + dt.files[0].name;
-    fn.style.display = 'block';
-    ua.style.borderColor = 'var(--or)';
-  }
-});
-
-// Form submit
-document.getElementById('appForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const required = this.querySelectorAll('[required]');
-  let valid = true;
-  required.forEach(el => {
-    if(!el.value.trim()) {
-      el.style.borderColor = '#e53935';
-      valid = false;
-    } else {
-      el.style.borderColor = 'var(--rl)';
-    }
-  });
-  if(!valid) return;
-  // Show success (in production this would POST to a backend)
-  document.getElementById('successMsg').style.display = 'block';
-  this.querySelector('[type=submit]').textContent = 'Application Sent ✓';
-  this.querySelector('[type=submit]').style.background = '#4caf50';
-  this.querySelector('[type=submit]').disabled = true;
-});
-</script>
 </body>
 </html>
